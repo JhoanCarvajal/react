@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/BadgeNew.css'
 import header from '../images/badge-header.svg'
-import NavBar from '../components/Navbar';
+//import NavBar from '../components/Navbar';  no lo estoy usando :(
 import BadgeForm from '../components/BadgeForm'
 import Badge from '../components/Badge'
 
