@@ -87,9 +87,9 @@ class Badges extends  React.Component{
                 {/* <NavBar /> */}
 
                 <div className="Badges">
-                    <div className="Badges_hero">
-                        <div className="Badges_container">
-                            <img className="Badges_cong-logo" src={confLogo} alt="Conf Logo"/>
+                    <div className="Badges__hero">
+                        <div className="Badges__container">
+                            <img className="Badges_conf-logo" src={confLogo} alt="Conf Logo"/>
                         </div>
                     </div>
                 </div>
