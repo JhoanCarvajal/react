@@ -27,6 +27,7 @@ class Badges extends  React.Component{
 
         try{
             const data = await api.badges.list()
+
             this.setState({loading: false, data: data})
         } catch (error){
             this.setState({loading: false, error: error})
@@ -53,17 +54,12 @@ class Badges extends  React.Component{
                     </div>
                 </div>
 
-                <div className="Badge__container">
+                <div className="Badges__container">
                     <div className="Badges__buttons">
                         <Link to="/badges/new" className="btn btn-primary">New Badge</Link>
                     </div>
-
-                    <div className="Badges__list">
-                        <div className="Badges__container">
-                            <BadgeList badges={this.state.data} />
-                            
-                        </div>
-                    </div>
+   
+                    <BadgeList badges={this.state.data} />
                 </div>
             </React.Fragment>
         )

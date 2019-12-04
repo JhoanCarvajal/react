@@ -15,6 +15,7 @@ async function callApi(endpoint, options = {}) {
   };
 
   const url = BASE_URL + endpoint;
+  console.log(url)
   const response = await fetch(url, options);
   const data = await response.json();
 

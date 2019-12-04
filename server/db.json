@@ -1,0 +1,20 @@
+{
+  "badges": [
+    {
+      "firstName": "jhoan",
+      "lastName": "carvajal",
+      "email": "jhoans127@outlook.es",
+      "jobTitle": "tecnologo",
+      "twitter": "jhoan7_7",
+      "id": 1
+    },
+    {
+      "firstName": "juan",
+      "lastName": "castillo",
+      "email": "jhoans12@outlook.es",
+      "jobTitle": "gamer",
+      "twitter": "juan7_7",
+      "id": 2
+    }
+  ]
+}
