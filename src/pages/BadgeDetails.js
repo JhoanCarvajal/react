@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import confLogo from '../images/platziconf-logo.svg'
 import Badge from '../components/Badge'
 import './styles/BadgeDetails.css'
+import Modal from '../components/Modal'
 
 
 function BadgeDetails(props) {
@@ -42,9 +43,9 @@ function BadgeDetails(props) {
                                     </Link>
                                 </div>
                                 <div>
-                                    <button className="btn btn-danger">
-                                        Delete
-                                    </button>
+                                    <button  className="btn btn-danger">Delete</button>
+                                    <Modal isOpen={props.modalIsOpen} onClose={props.onCloseModal}>Jhoan Carvajal</Modal>
+
                                 </div>
                             </div>
                         </div>
