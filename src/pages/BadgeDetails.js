@@ -4,54 +4,66 @@ import { Link } from 'react-router-dom'
 import confLogo from '../images/platziconf-logo.svg'
 import Badge from '../components/Badge'
 import './styles/BadgeDetails.css'
-import Modal from '../components/Modal'
+import DeleteBadgeModal from '../components/DeleteBadgeModal'
 
 
 function BadgeDetails(props) {
-    const badge = props.badge
+    const badge = props.badge;
     return (
         <div>
-                <div className="BadgeDetails__hero">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-6">
-                                <img src ={confLogo} alt ="logo de la conferencia"/>
-                            </div>
-                            <div className="col-6  BadgeDetails__hero-arttendant-name">
-                                <h1>{badge.firstName} {badge.lastName}</h1>
-                            </div>
+            <div className="BadgeDetails__hero">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-6">
+                            <img src={confLogo} alt="Logo de la Conferencia" />
+                        </div>
+                        <div className="col-6 BadgeDetails__hero-attendant-name">
+                            <h1>
+                                {badge.firstName} {badge.lastName}
+                            </h1>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div className="container">
-                    <div className="row">
-                        <div className="col">
-                            <Badge firstName={badge.firstName}
+            <div className="container">
+                <div className="row">
+                    <div className="col-6">
+                        <Badge
+                            firstName={badge.firstName}
                             lastName={badge.lastName}
                             email={badge.email}
-                            twiter={badge.twiter}
+                            twitter={badge.twitter}
                             jobTitle={badge.jobTitle}
-                            />
-                        </div>
-                        <div className="col">
-                            <h2>Actions</h2>
+                        />
+                    </div>
+                    <div className="col-6">
+                        <h2>Actions</h2>
+                        <div>
                             <div>
-                                <div>
-                                    <Link className="btn btn-primary mb-4" to={`/badges/${badge.id}/edit`}>
-                                        Edit
-                                    </Link>
-                                </div>
-                                <div>
-                                    <button  className="btn btn-danger">Delete</button>
-                                    <Modal isOpen={props.modalIsOpen} onClose={props.onCloseModal}>Jhoan Carvajal</Modal>
+                                <Link
+                                    className="btn btn-primary mb-4"
+                                    to={`/badges/${badge.id}/edit`}
+                                >
+                                    Edit
+                  </Link>
+                            </div>
 
-                                </div>
+                            <div>
+                                <button onClick={props.onOpenModal} className="btn btn-danger">
+                                    Delete
+                  </button>
+                                <DeleteBadgeModal
+                                    isOpen={props.modalIsOpen}
+                                    onClose={props.onCloseModal}
+                                    onDeleteBadge={props.onDeleteBadge}
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    )
+        </div>
+    );
 }
 export default BadgeDetails
