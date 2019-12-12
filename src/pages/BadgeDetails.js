@@ -43,16 +43,15 @@ function BadgeDetails(props) {
                             <div>
                                 <Link
                                     className="btn btn-primary mb-4"
-                                    to={`/badges/${badge.id}/edit`}
-                                >
+                                    to={`/badges/${badge.id}/edit`}>
                                     Edit
-                  </Link>
+                                </Link>
                             </div>
 
                             <div>
                                 <button onClick={props.onOpenModal} className="btn btn-danger">
                                     Delete
-                  </button>
+                            </button>
                                 <DeleteBadgeModal
                                     isOpen={props.modalIsOpen}
                                     onClose={props.onCloseModal}
