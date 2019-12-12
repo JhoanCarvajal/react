@@ -16,7 +16,7 @@ function BadgeDetails(props) {
                     <div className="row">
                         <div className="col-6">
                             <img src={confLogo} alt="Logo de la Conferencia" />
-                        </div>
+                        </div>       
                         <div className="col-6 BadgeDetails__hero-attendant-name">
                             <h1>
                                 {badge.firstName} {badge.lastName}

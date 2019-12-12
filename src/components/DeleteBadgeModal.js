@@ -19,7 +19,7 @@ function DeleteBadgeModal(props) {
                 </div>
             </div>
         </Modal>
-    );
+    )
 }
 
 export default DeleteBadgeModal;

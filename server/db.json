@@ -1,20 +1,3 @@
 {
-  "badges": [
-    {
-      "firstName": "Jhoan",
-      "lastName": "carvajal",
-      "email": "jhoans127@outlook.es",
-      "jobTitle": "tecnologo",
-      "twitter": "jhoan7_7",
-      "id": 1
-    },
-    {
-      "firstName": "jkljh",
-      "lastName": "asdfasf",
-      "email": "jhoans127@outlook.es",
-      "jobTitle": "asdfasdf",
-      "twitter": "fasdfasf",
-      "id": 2
-    }
-  ]
+  "badges": []
 }

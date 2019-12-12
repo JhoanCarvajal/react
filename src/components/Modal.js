@@ -18,7 +18,7 @@ function Modal(props) {
             </div>
         </div>,
         document.getElementById("modal")
-    );
+    )
 }
 
 export default Modal;
